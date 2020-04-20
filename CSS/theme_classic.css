@@ -1,0 +1,24 @@
+.bgr-frame-classic {
+ background: transparent; color: #245;
+ margin: 0px; text-align: center;
+}
+.classic-t0                { border: 1px solid #D0D6DB; 
+background-image: url(../img/bgr_5-13-lovely-lightblue.jpg); border: 1px solid #abc;}
+.classic-t1    { border: 0px solid #E3EEF2; background-color: white; border-collapse: collapse;}
+.classic-t1 td { border: 1px solid #D0D7D8; background-color: white; border-collapse: collapse;}
+.classic-t1 { color: #1E4866; }
+
+.classic-mt    { border: 2px solid #bbb; }
+.classic-mt td { border: 1px solid #bbb; }
+.classic-m   { background: #F2F5F7; color: #111;}
+.classic-mi  { background: transparent; color: #245;}
+.classic-mt  { background: #E2F2DA; background: #E8EEF2 url(../img/bgr_5-15-lovely-lightblue.jpg); color: #333;}
+.classic-caption { background: transparent;  color: #E2F2DA;  color: #245;}
+
+.classic-a a 		{text-decoration: none; color: #579; }
+.classic-a a:hover 	{text-decoration: none; color: #245;}
+
+.more
+.classic-ir { background: #xF9FCF2; background: transparent; color: #000;}
+.classic-i1 td             { border: 1px solid #D0D6DB; }
+.classic-i1 { background: #A5BACD; color: #125;}

@@ -1,0 +1,23 @@
+.prayertimetable {
+ height: 168px; width: 165px;
+}
+
+.reset {
+ height: 247px; width: 165px;
+}
+
+.info {
+ height: 247px; width: 165px;
+}
+
+.prayerselect {
+ height: 55px; width: 165px;
+}
+
+.prayerselect-nomenu {
+ height: 1px; width: 165px;
+}
+.boxwidth {
+ width: 165px;
+}
+

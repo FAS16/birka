@@ -1,0 +1,31 @@
+.bgr-frame-astro {
+ background: url(../img/astrolabe2.jpg) no-repeat;
+ margin: 50px 20px 20px 50px; text-align: left;
+}
+.astro-t0    { border: 1px solid #a8baa3; border-collapse: collapse; background: #a8baa3;}
+.astro-t1 td { border: 1px solid #ddd;    border-collapse: collapse;}
+.astro-t1    { background: #fff; color: #333;}
+
+.astro-mt    { border: 3px solid #E5E5DA; 
+ background-color: #F9F9FC;
+ background-image: url(xastrolabe3.jpg);
+}
+
+.astro-mt td { border: 1px solid #E5E5DA; background-color: #F8F7F4;}
+.astro-m  { background: #F9F9FC; color: #444;}
+.astro-mt { color: #333; 
+   background: transparent url(../img/astrolabe2.jpg);
+   border: 1px solid #C3C1CC;
+   border-collapse: collapse;
+}
+.astro-mi 		{ background: transparent; color: #444;}
+.astro-caption   	{color: #617F51;}
+
+.astro-a a 	     	{text-decoration: none; color: #617F51;}
+.astro-a a:hover 	{text-decoration: none; color: #333; }
+
+/*
+.astro-i1 td { border: 1px solid #ddd; }
+.astro-ir { background: transparent; color: #333;}
+.astro-i1 { background: transparent; color: #333;}
+*/

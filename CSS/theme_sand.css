@@ -1,0 +1,23 @@
+.bgr-frame-sand {
+ background: transparent url(../img/pic_sanddynor.jpg) no-repeat;
+ margin: 35px 0px 0px 35px; text-align: left;
+}
+.sand-t0    { border: 1px solid #bbb; }
+.sand-i1 td { border: 1px solid #ddd; }
+.sand-t1 td { border: 1px solid #ddd; }
+.sand-ir { background: transparent; color: #333;}
+.sand-i1 { background: transparent; color: #333;}
+.sand-t1 { background: transparent; color: #333;}
+
+.sand-mt    { border: 3px solid #E5E5DA; }
+.sand-mt td { border: 1px solid #E5E5DA; }
+.sand-m  { background: url(../img/pic_sanddynor-m.jpg) no-repeat; color: #333;}
+.sand-mt { background: transparent; color: #333;}
+.sand-mi { background: transparent; color: #4F7DAF;}
+.sand-caption   {color: #5984B2;}
+.sand-a a 	    {text-decoration: none; color: #909FB2;}
+.sand-a a:hover {text-decoration: none; color: #074F9B; }
+
+.sand-versions {}
+.vsand-t1 { background: white; color: #000;}
+.vsand-i1 { background: transparent; color: #555;}

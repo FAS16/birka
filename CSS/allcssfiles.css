@@ -1,0 +1,27 @@
+@import url('mini-dimensions.css');
+@import url('mini-styles.css');
+
+@import url('theme_oliv.css');
+@import url('theme_birka.css');
+@import url('theme_classic.css');
+@import url('theme_astro.css');
+@import url('theme_transparent.css');
+@import url('theme_inverted.css');
+@import url('theme_petals.css');
+@import url('theme_ursa.css');
+@import url('theme_sundsvall.css');
+@import url('theme_horizon.css');
+@import url('theme_sand.css');
+@import url('theme_leaves.css');
+
+@import url('theme_abuhanifa.css');
+
+.bgr-front-ag {
+ background: transparent url(../img/astrolabe6.png) no-repeat;}
+
+.theme_astro {
+ background: transparent url(../img/astrolabe2.jpg) no-repeat;}
+
+
+
+

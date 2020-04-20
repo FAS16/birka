@@ -1,0 +1,22 @@
+.bgr-frame-inverted { 
+ background: #001133;
+ margin: 15px 0 0 0; 
+}
+.inverted-t0    { border: 1px solid #bbb; }
+.inverted-i1 td { border: 1px solid #ddd; }
+.inverted-t1 td { border: 1px solid #ddd; }
+.inverted-ir { background: inverted; color: #ccc;}
+.inverted-i1 { background: inverted; color: #ccc;}
+.inverted-t1 { background: inverted; color: #ccc;}
+
+.inverted-mt    { border: 3px solid #fff; }
+.inverted-mt td { border: 1px solid #fff; }
+.inverted-m  { background: #e3e8ee url(../img/pic_.jpg) no-repeat; color: #ccc;}
+.inverted-mt { background: inverted; color: #222;}
+.inverted-mi { background: inverted; color: #456;}
+.inverted-caption   {color: #001133;}
+
+.inverted-a a 	 {text-decoration: none; color: #456;}
+.inverted-a a:hover {text-decoration: none; color: #789; text-decoration: underline}
+
+

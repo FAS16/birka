@@ -1,0 +1,29 @@
+.bgr-frame-oliv {
+ background-color: #fff7be; background-color: transparent; 
+ margin: 0px;
+}
+.oliv-ps { background-color: #D8E8FF; padding-bottom: 3px;}
+.oliv-pm { background-color: #D8E8FF; }
+.oliv-pt { background-color: #fff7be; padding-top: 4px;}
+.oliv-pb { background-color: #fff7be; padding-top: 1px;}
+.oliv-pf { background-color: #fff7be;}
+.oliv-pi { background-color: #fff7be;}
+
+.oliv-t0 { border: 0px solid #ffdd66; }
+.oliv-t1 { background: #fff; color: #444;}
+.oliv-t1 td { border: 1px solid #ffdd66; }
+
+.oliv-i1     { background: #transparent; color: #333;}
+.oliv-i1 td  { border: 1px solid #fff7be; }
+.oliv-ir     { background: #fff7be; color: #333;}
+
+.oliv-mt    { border: 2px solid #ddd; }
+.oliv-mt td { border: 1px solid #ddd; }
+.oliv-m   { background: url(../img/olive-branch.jpg) no-repeat; color: #111;}
+.oliv-mi  { background: transparent; color: #333;}
+.oliv-mt  { background: #FFF9E0; color: #333;}
+.oliv-caption { background: transparent; color: #333;}
+
+.oliv-a a 		{text-decoration: none; color: #666; }
+.oliv-a a:hover 	{text-decoration: none; color: #d61;}
+

@@ -1,0 +1,23 @@
+.bgr-frame-transparent {
+ background: transparent url(../img/pic_transparentdynor.jpg) no-repeat;
+ margin: 5px; text-align: left;
+}
+.transparent-t0    { border: 1px solid #bbb; }
+.transparent-i1 td { border: 1px solid #ddd; }
+.transparent-t1 td { border: 1px solid #ddd; }
+.transparent-ir { background: transparent; color: #333;}
+.transparent-i1 { background: transparent; color: #333;}
+.transparent-t1 { background: transparent; color: #333;}
+
+.transparent-mt    { border: 3px solid #E5E5DA; }
+.transparent-mt td { border: 1px solid #E5E5DA; }
+.transparent-m  { color: #333;}
+.transparent-mt { background-color: #f3f3f3; ; color: #333;}
+.transparent-mi { background: transparent; color: #333;}
+.transparent-caption   {color: #5984B2;}
+
+.transparent-a a 	 {text-decoration: none; color: #777777;}
+.transparent-a a:hover {text-decoration: none; color: #000;}
+
+
+

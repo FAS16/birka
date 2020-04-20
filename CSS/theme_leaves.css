@@ -1,0 +1,24 @@
+.bgr-frame-leaves {
+ background: transparent url(../img/pic_greenleaves-b.jpg) no-repeat;
+ margin: 60px 0px 0px 200px;
+}
+.leaves-t0 { border: 1px solid #D0D6DB; }
+.leaves-t1 { background: #C6CFD4; background: #E8EEF2; color: #025;}
+.leaves-t1, .leaves-t1 td { border: 1px solid #fff; width: 161px;}
+.leaves-mt    { border: 2px solid #bbb; }
+.leaves-mt td { border: 1px solid #bbb; }
+.leaves-m   { background: url(../img/pic_greenleaves-m.jpg) no-repeat; color: #111;}
+.leaves-mi  { background: transparent; color: #fff;}
+.leaves-mt  { background: #E2F2DA; background: #E8EEF2; color: #333;}
+.leaves-caption { background: transparent;  color: #E2F2DA;  color: #fff;}
+
+.leaves-a a 		{text-decoration: none; color: #E0EEF9; }
+.leaves-a a:hover 	{text-decoration: none; color: #A8E000; color: #A2EDFF; color: #fff;}
+
+.leaves-versions {}
+.vbgr-frame-leaves {
+  background: transparent url(../img/pic_greenleaves-1.jpg) no-repeat;}
+
+.leaves-i1     { background: #A5BACD; color: #125;}
+.leaves-i1 td  { border: 1px solid #D0D6DB; }
+.leaves-ir     { background: #xF9FCF2; background: transparent; color: #000;}

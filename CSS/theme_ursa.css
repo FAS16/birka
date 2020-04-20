@@ -1,0 +1,15 @@
+.bgr-frame-ursa {
+// width: 600px;
+ background: transparent url(../img/pic_ursa-major-2.jpg) no-repeat;
+ margin: 38px 0px 0px 70px; text-align: center;}
+.ursa-t0    { border: 1px solid #4C7B99; }
+.ursa-i1 td { border: 1px solid #4C7B99; }
+.ursa-t1 td { border: 1px solid #8498A5; border: 1px solid #999;}
+.ursa-ir { background: transparent; color: #ddd;}
+.ursa-i1 { background: transparent; color: #fff;}
+.ursa-t1 { background: transparent; color: #fff;}
+.ursa-m  { background: url(../img/pic_ursa-major-m.jpg) no-repeat; color: #FFF;}
+.ursa-mt { background: #eeeeee; color: #222;}
+.ursa-caption   {color: #fff;}
+.ursa-a a 	    {text-decoration: none; color: #A1BAE2; color: #CCCCFF;}
+.ursa-a a:hover {text-decoration: none; color: #fe3;}

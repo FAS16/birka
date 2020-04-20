@@ -1,0 +1,18 @@
+.bgr-frame-horizon {
+ background: transparent url(../img/sundsvall.jpg) no-repeat;
+ margin: 80px 0px 0px 20px;;
+}
+.horizon-t0    { border: 1px solid #89c; }
+.horizon-i1 td { border: 1px solid #89c; }
+.horizon-t1 td { border: 1px solid #bcd; }
+.horizon-ir { background: transparent; color: #fff;}
+.horizon-i1 { background: tranpsarent; color: #def;}
+.horizon-t1 { background: transparent; color: #fff;}
+
+.horizon-mt td { border: 1px solid #bbb; }
+.horizon-mt    { border: 2px solid #bbb; }
+.horizon-m  { background: url(../img/sundsvall-m.jpg) no-repeat; color: #FFF;}
+.horizon-mt { background: #eeeeee; color: #222;}
+.horizon-caption   {color: #fff;}
+.horizon-a a 	   {text-decoration: none; color: #A1BAE2; color: #CCECFF;}
+.horizon-a a:hover {text-decoration: none; color: #FFA159;}

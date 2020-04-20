@@ -1,0 +1,27 @@
+.bgr-frame-birka {
+ background: transparent; color: #245;
+ margin: 0px;
+}
+.birka-t0    { border: 1px solid #D0D6DB; background: transparent; border: 0px solid #abc;}
+.birka-t1    { border: 0px solid #E3EEF2; background-color: white; border-collapse: collapse;}
+.birka-t1 td { border: 1px solid #D0D7D8; background-color: white; border-collapse: collapse;}
+.birka-t1 { color: #1E4866; }
+
+.birka-mt    { border: 2px solid #bbb; }
+.birka-mt td { border: 1px solid #bbb; }
+.birka-m   { background: #F2F5F7; color: #111;}
+.birka-mi  { background: transparent; color: #245;}
+.birka-mt  { background: #E2F2DA; background: #E8EEF2 url(../img/bgr_5-15-lovely-lightblue.jpg); color: #333;}
+.birka-caption { background: transparent;  color: #E2F2DA;  color: #245;}
+
+.birka-a a 		{text-decoration: none; color: #579; }
+.birka-a a:hover 	{text-decoration: none; color: #245;}
+
+.birka-footer {height: 1px; overflow: hidden; visiblity: hidden;}
+
+/*
+.more
+.birka-ir     { background: #xF9FCF2; background: transparent; color: #000;}
+.birka-i1 td  { border: 1px solid #D0D6DB; }
+.birka-i1     { background: #A5BACD; color: #125;}
+*/

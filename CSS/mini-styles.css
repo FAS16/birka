@@ -1,0 +1,150 @@
+.bgr-info {
+ background-color: transparent; 
+ background-image: url(../);}
+
+.bgr-prayertimetable {
+ background-color: transparent; 
+ background-image: url(../);
+}
+
+.bgr-reset {
+ background-color: transparent; 
+ background-image: url(../);
+}
+
+.bgr-prayerselect {
+ background-color: transparent; 
+ background-image: url(../);}
+
+.bgr-mini {
+ background-color: transparent; 
+ background-image: url(../);}
+
+.bgr-start {
+ background-color: transparent; 
+ background-image: url(../);}
+
+.startbox {
+background-color: transparent; 
+background-image: url(../);
+margin-bottom: 0px;
+line-height: 1.2em;
+border-style: solid;
+border-width: 1px;
+border-color: #aaa;
+border-collapse: collapse;
+}
+
+.normal {
+font-family: verdana, arial, tahoma;
+font-size: 13px;
+line-height: 16px;
+}
+
+.h2a {
+ font-family: Traditional Arabic; 
+ font-size: 24px; 
+ font-style: normal; 
+ font-weight: bold; 
+ text-align: center; 
+ dir: rtl;
+}
+
+.opaque-notinuse {
+ background-color: white; 
+-ms-filter:
+"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+ filter:Alpha(Opacity=90);
+ opacity:0.90;
+}
+
+.whitebox {
+border-color: #ccc;
+margin-bottom: 0px; line-height: 1.2em;
+border-style: solid; border-width: 1px; border-collapse: collapse;
+}
+
+.greybox {
+border-color: #aaa;
+margin-bottom: 0px; line-height: 1.2em;
+border-style: solid; border-width: 1px; border-collapse: collapse;
+}
+
+//===============
+//Dayly timetable
+//===============
+
+.x {}
+
+.info1 {
+ padding: 5px 2px 5px 2px;
+ font-family: tahoma, arial;
+ font-size: 13px;
+ line-height: 16px;
+ text-align: center;
+ border-collapse: collapse;
+}
+
+
+#timetable1, #timetable1 td, #timetable1 th {
+font-family: tahoma, arial;
+font-size: 13px;
+line-height: 16px;
+text-align: center;
+border-collapse: collapse;
+}
+
+#timetable1 td {
+xwidth: 50%;
+}
+
+
+//=================
+//Monthly timetable
+//=================
+
+.x {}
+
+.caption {
+ width: 200px; 
+ font-family: tahoma; 
+ font-size: 20px; 
+ text-align: center; 
+}
+
+.arrow {
+ font-family: arial; 
+ font-size: 16px; 
+ font-weight: bold;
+}
+
+.mi {
+ font-family: arial, tahoma; 
+ font-size: 13px;
+ text-align: center; 
+ line-height: 150%;
+}
+
+.mt  {
+ font-family: arial; font-size: 12px;
+ border-collapse: collapse;
+}
+
+.mt td {
+ padding: 2px 0px;
+ text-align: center; 
+}
+
+#normal-row {
+ background-color: white;
+}
+#head-row   {
+ background-color: transparent; 
+}
+#today-row  {
+ background-color: transparent;
+ color: #000; 
+}
+
+#faint  {color: #999;}
+#taqdir {color: #999;}

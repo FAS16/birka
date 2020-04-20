@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Bøntider</title>
+    <meta http-equiv="Cache-Control" content="Public" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="xCSS/classic_dayly-css.css" type="text/css">
+
+    <script type="text/javascript" src="js\queries.js"></script>
+    <script type="text/javascript" src="js\cookies.js"></script>
+    <script type="text/javascript" src="js\ajax.js"></script>
+    <script type="text/javascript" src="js\styleswitcher.js"></script>
+
+    <!--<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>-->
+    <script type="text/javascript" src="js\geo-birka1.js"></script>
+    <script type="text/javascript" src="js\prayTime.js"></script>
+    <script type="text/javascript" src="js\prayertimes.js"></script>
+    <script type="text/javascript" src="js\prayerselect.js"></script>
+
+    <!------------------------->
+    <!-- KEYS FOR GOOGLEMAPS -->
+    <!-- damas 2018-12-07 --- -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP-iq7vaYHbI6WV5jXQDsPMa0kQIcvX5I">
+    </script>-->
+    <!------------------------->
+
+</head>
+
+<body onload="loadfunction()">
+    <script type="text/javascript">
+        function loadfunction() {
+
+            saction();
+
+            //Style
+            var bgr;
+            bgr = getQueryVariable('theme'); 	//Parse query string
+            if (!bgr) bgr = 'transparent'; 		// Style default
+            if (bgr) if (bgr != '') document.getElementById('bgr').value = bgr; // Store
+
+            //Set display
+            document.body.className = 'bgr-frame-' + bgr + ' ' + bgr + '-a';
+            settheme1(); // js located in prayerselect.js
+            document.getElementById('startbox').style.height = null;
+
+            // var query = readQuery(); // other query-variables read by getcookies
+            var query = window.location.search.substring(1);
+            var lang = getQueryVariable('lang'); langToggle(lang);
+            var qmeth = getQueryVariable('meth');
+            var qlang = getQueryVariable('lang');
+
+
+            query = readQuery();
+            saction();
+            //========================================================================
+
+            //------------------------------------------------------------------------
+        }
+    </script>
+
+    <!-- ======================== Main content ========================  -->
+
+    <center>
+        <div id="startbox" style="height: 1px; overflow: hidden;">
+            <table id="t0" border="0" cellpadding="0" cellspacing="0" class="normal">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="width: 175px; display:none; overflow: hidden;">
+                                <center>
+
+                                    <!-- p-select -->
+                                    <div id="ps" style="padding-top: 5px; display:none;">
+                                        <div style="margin: 0px 5px;">
+                                            <div id="prayerselect" name="prayerselect" style="height: 52px; display:none; overflow: hidden;">
+
+                                                <!-- Begin ps-module -->
+                                                <div style="position: relative;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" class="prayerselect" id="prayerselectbox">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="vertical-align: top;">
+                                                                    <form name="showcity" class="selectframe0" action="#" onsubmit="initCity(5); return false;">
+                                                                        <div style="position: absolute; top: 0px; height: 25px; display:none; overflow: hidden;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 165px;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div style="">
+                                                                                                <a name="1"></a>
+                                                                                                <input id="address" name="address" type="text" style="width: 103px;" value="" onchange="initCity(5)" xonblur="initCity(5)">
+                                                                                                <input id="lat" name="lat" value="" type="hidden">
+                                                                                                <input id="lng" name="lng" value="" type="hidden">
+                                                                                                <input id="language" name="language" value="sve" type="hidden">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td>
+                                                                                            <div style="margin-left: 5px;">
+                                                                                                <input id="tzid" name="tzid" value="" type="hidden">
+                                                                                                <input id="tz" name="tz" value="Timezone" type="text" style="width: 60px; color: #999; font-style: italic;" onchange="
+document.showcity.tzid.value = 'set manually to ';
+this.style.fontStyle = 'normal';
+this.style.color = '#000';
+initCity();
+//return false;" onclick="
+document.showcity.tzid.value = 'n/a';
+this.style.fontStyle = 'italic';
+this.style.color = '#999';
+this.value = 'Timezone';
+initCity();
+//return false;" ondblclick="
+this.style.fontStyle = 'normal';
+this.style.color = '#000';
+GetTimeZoneData();
+initCity();
+//return false;">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </form>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="vertical-align: top;">
+                                                                    <form action="#" name="setmethod" class="selectframe0" onsubmit="saction(); return false;">
+                                                                        <div style="position: absolute; height:auto; display:none; overflow: hidden;">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 165px;">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="vertical-align: middle; display:none; text-align: left;">
+                                                                                            <div style="margin-top: 1px;">
+                                                                                                <select id="method1" name="method1" size="1" style="height: 21px; width: 120px;" onchange="saction()">
+                                                                                                    <option value="33">Hanafi</option>
+                                                                                                    <option value="34">Shafi'i | Maliki</option>
+                                                                                                    <option value="5">Uthmani</option>
+                                                                                                    <option value="17">MWL</option>
+                                                                                                    <option value="---">---------------</option>
+                                                                                                    <option name="lswitch" value="lsw">Switch language</option>
+                                                                                                    <option name="map" value="map">Show map</option>
+                                                                                                    <option value="---"></option>
+
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        <td style="vertical-align: top; text-align: left;">
+                                                                                            <div style="margin: 1px 10px 0px 3px;">
+                                                                                                <input name="go" style="width: 43px;" value="Go" type="submit">
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </form>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <form action="#" name="special" onsubmit="compute(3)">
+                <a name="3"></a>
+                <table border="0" cellpadding="0" cellspacing="0" width:175px;=">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; text-align: center;">
+                                <div style="margin: 1px; display:none; height:0;">
+                                    <input type="text" name="asr1" style="width: 15px;" value="1">
+                                    <input type="hidden" name="asr2" style="" value="">
+                                    <input type="text" name="angle1" style="width: 29px;" value="18">
+                                    <input type="text" name="sunadj1" style="width: 36px;" value="0.833">
+                                    <input type="text" name="sunadj2" style="width: 36px;" value="0.833">
+                                    <input type="text" name="angle2" style="width: 29px;" value="18">
+                                    <input type="hidden" name="angle3" style="" value="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; text-align: center;">
+                                <div style="margin: 0px 3px 0px 5px;">
+                                    <input type="hidden" name="hilat1" id="hilat1" style="width: 15px; display:none" value="1"> <input type="hidden" name="add0" style="width: 17px; display:none" value="0"><input type="hidden" name="add1" style="width: 17px; display:none" value="0"><input type="hidden" name="add2" style="width: 17px; display:none" value="0"><input type="hidden" name="add3" style="width: 17px; display:none" value="0"><input type="hidden" name="add4" style="width: 17px; display:none" value="0"><input type="hidden" name="add5" style="width: 17px; display:none" value="0"><input type="submit" style="width: 10px; display:none" value="Go">
+                                    <input type="hidden" name="hilat0" id="hilat0" value="1">
+                                    <input type="hidden" name="hilat2" id="hilat2" value="0">
+                                    <input type="hidden" name="hilat3" id="hilat3" value="0">
+                                    <input type="hidden" name="hilat4" id="hilat4" value="0">
+                                    <input type="hidden" name="hilat5" id="hilat5" value="0">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <form action="#" name="defaults">
+                <input name="language" value="sve" type="hidden">
+                <input name="city" value="" type="hidden">
+                <input name="method" value="11" type="hidden">
+                <input name="methodbck" value="11" type="hidden">
+            </form>
+            <form action="#" name="display" id="display">
+                <input name="bgr" id="bgr" value="" type="hidden">
+                <input name="containerm" id="containerm" value="monthly.html" type="hidden">
+            </form>
+        </div>
+        <!-- End ps-module -->
+        <!-- map_canvas -->
+        <div id="pm">
+            <div style="margin: 0px 5px;">
+                <div id="map_canvas" class="normal" style="width: 163px; height: 140px; overflow: hidden; margin-top: 0px;">
+                    <!-- style="background-image: url(img/star100.png);" -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- p-table -->
+        <div id="pt">
+            <div style="margin: 0px 5px; padding-top: 1px;">
+                <div id="prayertimetable" name="prayertimetable" style="height: 1px; overflow: hidden; border-collapse: collapse;">
+                    <div id="t1">
+                        <table id="timetable1" width="165" class="normal" border="0" cellpadding="3" cellspacing="0">
+                            <tbody>
+                                <tr><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- m-button -->
+        <div id="pb">
+            <div style="padding: 0px 5px; padding-top: 3px;">
+                <div style="text-align: center; height: 28px; overflow: hidden;">
+                    <input id="mbutton" name="mbutton" style="width: 165px;" value="" onclick="computemonth();" type="button">
+                </div>
+            </div>
+        </div>
+
+        <!-- Table info -->
+        <div id="pi">
+            <div id="i1" style="height: 1px; overflow: hidden; visibility: hidden;">
+                <div id="table-info" class="textfont" style="margin: 0px; width: 165px;">
+                    Table info
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer - Link home -->
+        <div id="pf">
+            <div style="margin: 0px 5px; padding-top: 2px; padding-bottom: 10px;">
+                <div id="footer" class="linkhome normal" style="text-align: center;">
+                    <!--<a href="http://www.birka.st" target="_blank"><b>www.birka.st</b></a>-->
+                </div>
+            </div>
+        </div>
+
+    </center>
+
+
+
+
+
+
+
+    <!-- ======================== Main content ends here ========================  -->
+    <!-- Load p-select
+    <script type="text/javascript">ajaxpage('bismiAllah.html','prayerselect')</script>
+    <script type="text/javascript">ajaxpage('pselect.html','prayerselect')</script>
+    -->
+    <!-- Counter -->
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+.bgr-frame-petals {
+ background: url(../img/pic_blomblad.jpg) no-repeat;
+ margin-top: 30px; margin-left: 20px; text-align: left;}
+.petals-t0    { border: 1px solid #d3d3d3; }
+.petals-i1 td { border: 1px solid #ddd; }
+.petals-t1 td { border: 1px solid #ddd; }
+.petals-ir { background: #xF9FCF2; background: transparent; color: #000;}
+.petals-i1 { background: transparent; color: #333;}
+.petals-t1 { background: transparent; color: #333;}
+
+.petals-mt td { border: 1px solid #ddd; }
+.petals-mt    { border: 2px solid #ddd; }
+.petals-m  { background: #F8F9F2; color: #111;}
+.petals-mt { background: #D4F7A7; background: E0EDD1; background: #ECFCD1; color: #333;}
+.petals-caption { color: #d95722; color: #B25835; color: #A06450;}
+.petals-a a 		{text-decoration: none; color: #739B2E;}
+.petals-a a:hover 	{text-decoration: none; color: #B25835; color: #A06450}
+
+
+//.petals-i1 { background: white; color: #000;}
+//.petals-t1 { background: white; color: #000;}
